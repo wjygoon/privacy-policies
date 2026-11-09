@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>PlayDeck 隐私政策</title>
+<meta name="description" content="PlayDeck（亲子游戏卡）隐私政策：不收集个人信息，不联网，照片只保存在本机。">
+<style>
+  :root{
+    --bg:#F7F4EE; --card:#FFFFFF; --ink:#2A2622; --muted:#6B6459;
+    --line:#E3DCD0; --accent:#8A5A2B; --accent-soft:#F3E9DC;
+  }
+  *{box-sizing:border-box}
+  html{-webkit-text-size-adjust:100%}
+  body{
+    margin:0; background:var(--bg); color:var(--ink);
+    font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
+    font-size:16px; line-height:1.75; letter-spacing:.01em;
+  }
+  .wrap{max-width:760px; margin:0 auto; padding:28px 20px 64px}
+  .topbar{display:flex; justify-content:space-between; align-items:center; gap:12px; margin-bottom:26px; flex-wrap:wrap}
+  .brand{font-size:14px; font-weight:600; color:var(--accent); text-decoration:none; letter-spacing:.02em}
+  .langs{display:flex; gap:6px}
+  .langs a{
+    font-size:13px; text-decoration:none; color:var(--muted);
+    border:1px solid var(--line); border-radius:999px; padding:4px 12px; background:var(--card);
+  }
+  .langs a.on{background:var(--accent); border-color:var(--accent); color:#fff}
+  h1{font-size:26px; line-height:1.35; margin:0 0 8px; letter-spacing:-.01em}
+  .meta{font-size:13px; color:var(--muted); margin:0 0 24px}
+  .meta span{white-space:nowrap}
+  .summary{
+    background:var(--accent-soft); border-radius:14px; padding:18px 20px;
+    font-size:15.5px; margin:0 0 34px;
+  }
+  .summary strong{color:var(--accent)}
+  h2{
+    font-size:17px; margin:34px 0 10px; padding-top:20px;
+    border-top:1px solid var(--line); letter-spacing:-.005em;
+  }
+  h2 .n{display:inline-block; min-width:1.6em; color:var(--accent); font-variant-numeric:tabular-nums}
+  h3{font-size:15px; margin:18px 0 6px; color:var(--ink)}
+  p{margin:0 0 12px}
+  ul{margin:0 0 12px; padding-left:1.25em}
+  li{margin:0 0 7px}
+  li::marker{color:var(--accent)}
+  .note{
+    font-size:14px; color:var(--muted); background:var(--card);
+    border:1px solid var(--line); border-radius:10px; padding:12px 14px; margin:14px 0
+  }
+  a{color:var(--accent)}
+  footer{
+    margin-top:44px; padding-top:18px; border-top:1px solid var(--line);
+    font-size:13.5px; color:var(--muted)
+  }
+  footer a{color:var(--accent); text-decoration:none; word-break:break-all}
+  @media (prefers-color-scheme:dark){
+    :root{
+      --bg:#161412; --card:#1F1C19; --ink:#EDE7DE; --muted:#A79E92;
+      --line:#332E29; --accent:#D8A56A; --accent-soft:#2A231C;
+    }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="topbar">
+    <a class="brand" href="../index.html">← 所有政策</a>
+    <div class="langs">
+      <a class="on" href="zh.html">中文</a>
+      <a href="en.html">English</a>
+    </div>
+  </div>
+
+  <h1>PlayDeck 隐私政策</h1>
+  <p class="meta"><span>生效日期：2026 年 11 月 9 日</span> · <span>适用版本：1.0.0 及以上</span></p>
+
+  <div class="summary">
+    <strong>一句话：</strong>PlayDeck 不收集你的个人信息。App 不发起网络请求、不需要账号、没有广告和分析工具；你在 App 里产生的记录和照片只保存在这台设备上。
+  </div>
+
+  <h2><span class="n">1</span>我们不收集什么</h2>
+  <ul>
+    <li>不需要注册或登录，不收集姓名、邮箱、手机号、设备标识符</li>
+    <li>不读取位置、通讯录、健康数据、麦克风或相机</li>
+    <li>不做跨 App 或跨网站追踪，不投放任何广告</li>
+    <li>不集成第三方广告、统计或崩溃上报 SDK</li>
+    <li>不向任何服务器发送数据——App 内没有网络请求代码</li>
+  </ul>
+
+  <h2><span class="n">2</span>数据保存在哪里</h2>
+  <ul>
+    <li><strong>卡片内容：</strong>93 张亲子游戏卡随 App 一起安装，是内置数据，不来自网络。</li>
+    <li><strong>陪玩记录：</strong>每一次的卡片、日期和时长，保存在 App 自己的本地数据库。</li>
+    <li><strong>回忆卡照片：</strong>照片由你通过系统相册选择器（PhotosPicker）主动挑选，App 只拿到你选中的那一张，复制到 App 自己的文件夹用于合成分享图。App 不会读取相册里的其他照片，不会写回系统相册。</li>
+    <li><strong>分享图与打印排版：</strong>都在本机生成，不经过服务器。</li>
+  </ul>
+  <div class="note">你的数据不在我们的服务器上，因为我们没有服务器接收它。</div>
+
+  <h2><span class="n">3</span>第三方服务与系统能力</h2>
+  <h3>Apple App Store 内购</h3>
+  <p>解锁全部卡片是一次性买断（非消耗型）。购买、退款与恢复由 Apple 处理，我们接触不到你的支付方式、账单地址或 Apple ID 信息。</p>
+  <h3>系统相册选择器</h3>
+  <p>用于让你挑选一张照片。它运行在系统进程中，App 只能获得你明确选中的那一张。</p>
+  <h3>系统分享与打印</h3>
+  <p>分享图与实体卡由你决定去向——保存到相册、发送给他人或打印。App 不代为上传，也不记录你的分享行为。</p>
+  <p>除以上系统能力外，App 不使用任何第三方服务。</p>
+
+  <h2><span class="n">4</span>儿童隐私</h2>
+  <ul>
+    <li>PlayDeck 面向家长与 3–8 岁儿童共同使用，由家长操作 App。</li>
+    <li>我们不收集任何用户（包括儿童）的个人信息。</li>
+    <li>App 内没有账号、没有聊天、没有用户生成内容、没有社交功能、没有广告。</li>
+    <li>解锁付费内容需由家长通过 App Store 完成购买；App 内没有诱导儿童消费的设计。</li>
+  </ul>
+
+  <h2><span class="n">5</span>数据删除</h2>
+  <ul>
+    <li><strong>回忆卡：</strong>在「回忆」页长按卡片即可删除，会同时清除本机照片文件与对应记录。删除后不可恢复。</li>
+    <li><strong>全部数据：</strong>删除 App 即清除本机保存的全部记录与照片文件。</li>
+    <li>由于数据不在我们的服务器上，因此不存在「向开发者申请删除」的流程——我们本来就没有你的数据。</li>
+  </ul>
+
+  <h2><span class="n">6</span>政策更新</h2>
+  <ul>
+    <li>本政策如有变更，会更新本页面并修改顶部生效日期。</li>
+    <li>涉及数据处理的重大变更，会在 App 更新说明中提示。</li>
+    <li>本页面的历史版本可通过公开仓库的提交记录查看。</li>
+  </ul>
+
+  <h2><span class="n">7</span>联系我们</h2>
+  <p>对本政策有任何疑问，请发送邮件至 <a href="mailto:wjygoon@163.com">wjygoon@163.com</a>。</p>
+
+  <footer>
+    PlayDeck · 亲子游戏卡<br>
+    <a href="../index.html">所有政策</a> · <a href="en.html">English version</a>
+  </footer>
+
+</div>
+</body>
+</html>
