@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>豆格 BeadGrid 隐私政策</title>
+<meta name="description" content="豆格（BeadGrid）隐私政策：图片仅在本机处理、不上传；无账号、无广告、无分析 SDK。">
+<style>
+  :root{
+    --bg:#F6F6FB; --card:#FFFFFF; --ink:#1E1E2A; --muted:#61617A;
+    --line:#E2E2EE; --accent:#4B3FD6; --accent-soft:#EDEBFB;
+  }
+  *{box-sizing:border-box}
+  html{-webkit-text-size-adjust:100%}
+  body{
+    margin:0; background:var(--bg); color:var(--ink);
+    font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
+    font-size:16px; line-height:1.75; letter-spacing:.01em;
+  }
+  .wrap{max-width:760px; margin:0 auto; padding:28px 20px 64px}
+  .topbar{display:flex; justify-content:space-between; align-items:center; gap:12px; margin-bottom:26px; flex-wrap:wrap}
+  .brand{font-size:14px; font-weight:600; color:var(--accent); text-decoration:none; letter-spacing:.02em}
+  .langs{display:flex; gap:6px}
+  .langs a{
+    font-size:13px; text-decoration:none; color:var(--muted);
+    border:1px solid var(--line); border-radius:999px; padding:4px 12px; background:var(--card);
+  }
+  .langs a.on{background:var(--accent); border-color:var(--accent); color:#fff}
+  h1{font-size:26px; line-height:1.35; margin:0 0 8px; letter-spacing:-.01em}
+  .meta{font-size:13px; color:var(--muted); margin:0 0 24px}
+  .meta span{white-space:nowrap}
+  .summary{background:var(--accent-soft); border-radius:14px; padding:18px 20px; font-size:15.5px; margin:0 0 34px}
+  .summary strong{color:var(--accent)}
+  h2{font-size:17px; margin:34px 0 10px; padding-top:20px; border-top:1px solid var(--line); letter-spacing:-.005em}
+  h2 .n{display:inline-block; min-width:1.6em; color:var(--accent); font-variant-numeric:tabular-nums}
+  h3{font-size:15px; margin:18px 0 6px; color:var(--ink)}
+  p{margin:0 0 12px}
+  ul{margin:0 0 12px; padding-left:1.25em}
+  li{margin:0 0 7px}
+  li::marker{color:var(--accent)}
+  .note{font-size:14px; color:var(--muted); background:var(--card); border:1px solid var(--line); border-radius:10px; padding:12px 14px; margin:14px 0}
+  a{color:var(--accent)}
+  footer{margin-top:44px; padding-top:18px; border-top:1px solid var(--line); font-size:13.5px; color:var(--muted)}
+  footer a{color:var(--accent); text-decoration:none; word-break:break-all}
+  @media (prefers-color-scheme:dark){
+    :root{--bg:#12121C; --card:#1B1B28; --ink:#E8E8F2; --muted:#9A9AB4;
+          --line:#2C2C3E; --accent:#A79BFF; --accent-soft:#211E38;}
+  }
+</style>
+</head>
+<body>
+
+<div class="wrap">
+
+  <div class="topbar">
+    <a class="brand" href="../index.html">← 所有政策</a>
+    <div class="langs">
+      <a class="on" href="zh.html">中文</a>
+      <a href="en.html">English</a>
+    </div>
+  </div>
+
+  <h1>豆格 BeadGrid 隐私政策</h1>
+  <p class="meta"><span>生效日期：2026 年 11 月 13 日</span> · <span>适用版本：1.0 及以上</span></p>
+
+  <div class="summary">
+    <strong>一句话：</strong>豆格不收集你的个人信息。你选择的照片和生成的拼豆图纸只保存在本机，不会上传到任何服务器；App 没有账号，没有广告、统计或崩溃上报 SDK，也没有任何网络请求代码。导出的 PDF / PNG 由你自己保存和分享。
+  </div>
+
+  <h2><span class="n">1</span>我们不收集什么</h2>
+  <ul>
+    <li>不需要注册或登录，不收集姓名、邮箱、手机号、设备标识符</li>
+    <li>不收集位置、通讯录、麦克风、健康数据</li>
+    <li>不做跨 App 或跨网站追踪，不含任何广告</li>
+    <li>不集成第三方统计、归因或崩溃上报 SDK</li>
+    <li>App 内没有网络请求代码，图片与项目数据不会离开你的设备</li>
+  </ul>
+
+  <h2><span class="n">2</span>图片如何被处理</h2>
+  <ul>
+    <li>你通过「相册选择」或「拍照」导入一张图片；App 只拿到你主动选择或拍摄的这一张，不会扫描或读取你的整个相册。</li>
+    <li>裁剪、像素化、减色、色号匹配、图纸与清单生成，全部由设备本地的 Core Graphics / Accelerate 完成，不经过任何服务器。</li>
+    <li>处理结果（像素图、色号、材料清单）保存在 App 自己的沙盒里，用于下次打开继续编辑。</li>
+  </ul>
+  <div class="note">豆格不上传、不备份、也不向任何第三方共享你的照片或图纸。</div>
+
+  <h2><span class="n">3</span>数据保存在哪里</h2>
+  <ul>
+    <li><strong>本机：</strong>项目名称、图片、网格尺寸、每格颜色、材料清单等，全部保存在 App 沙盒（SwiftData 与本地文件）。</li>
+    <li><strong>导出文件：</strong>PDF / PNG 由你触发导出，保存到「文件」或相册，或通过系统分享面板发送给他人。文件去向完全由你决定，开发者无法访问。</li>
+    <li>App 没有云端同步，也没有开发者服务器，因此不存在「数据被同步到某处」的情况。</li>
+  </ul>
+
+  <h2><span class="n">4</span>系统权限</h2>
+  <ul>
+    <li><strong>相机：</strong>仅在你选择「拍照导入」时申请，用于拍摄要转成图纸的照片；不拍照时不会调用。</li>
+    <li><strong>相册（仅写入）：</strong>仅在你把导出的图片保存到相册时申请，不会读取你的其他照片。</li>
+    <li>拒绝上述任一权限，仍可使用导入本地图片、编辑、PDF 导出等其余功能。</li>
+  </ul>
+
+  <h2><span class="n">5</span>儿童隐私</h2>
+  <ul>
+    <li>豆格不是面向儿童设计的产品，App Store 年龄分级为 4+。</li>
+    <li>我们不收集任何用户的个人信息，包括儿童。</li>
+    <li>App 内没有账号、社交、聊天或用户生成内容。</li>
+  </ul>
+
+  <h2><span class="n">6</span>数据删除</h2>
+  <ul>
+    <li><strong>单个项目：</strong>在项目列表长按删除，会同时删除该项目的所有编辑结果与导出缓存。</li>
+    <li><strong>本机全部数据：</strong>删除 App 即可全部清除。</li>
+    <li><strong>已导出的文件：</strong>请在你保存的位置（文件 App、相册或聊天工具）自行删除。</li>
+    <li>由于数据不在我们的服务器上，不存在「向开发者申请删除」的流程。</li>
+  </ul>
+
+  <h2><span class="n">7</span>政策更新</h2>
+  <ul>
+    <li>本政策如有变更，会更新本页面并修改顶部生效日期。</li>
+    <li>涉及数据处理的重大变更，会在 App 更新说明中提示。</li>
+  </ul>
+
+  <h2><span class="n">8</span>联系我们</h2>
+  <p>对本政策有任何疑问，请发送邮件至 <a href="mailto:wjygoon@163.com">wjygoon@163.com</a>。</p>
+
+  <footer>
+    豆格 BeadGrid<br>
+    <a href="../index.html">所有政策</a> · <a href="en.html">English version</a>
+  </footer>
+
+</div>
+
+</body>
+</html>
